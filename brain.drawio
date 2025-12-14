@@ -91,7 +91,7 @@
           <mxGeometry x="860" y="430" width="180" height="310" as="geometry" />
         </mxCell>
         
-        <mxCell id="page-script-detail" value="POST DETAIL&#xa;─────────────────────&#xa;Date: Luni, 2 Dec&#xa;Type: EDUCATE&#xa;Status: Draft/Approved&#xa;&#xa;VIDEO SCRIPT (ce zice):&#xa;HOOK: [text area]&#xa;BODY: [text area]&#xa;CTA:  [text area]&#xa;&#xa;POST CAPTION (sub video):&#xa;[editable text area]&#xa;&#xa;HASHTAGS:&#xa;#marketing #ppc #tips&#xa;[edit tags]&#xa;&#xa;ASSETS:&#xa;[thumb][thumb][+add]&#xa;&#xa;─────────────────────&#xa;[Regenerate All]&#xa;[Save] [Approve]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+        <mxCell id="page-script-detail" value="POST DETAIL&#xa;─────────────────────&#xa;Date: Luni, 2 Dec&#xa;Type: EDUCATE&#xa;Status: Draft/Approved&#xa;&#xa;VIDEO SCRIPT (ce zice):&#xa;HOOK: [text area]&#xa;BODY: [text area]&#xa;CTA:  [text area]&#xa;&#xa;DESCRIERE POSTARE:&#xa;(textul afisat pe social)&#xa;[editable text area]&#xa;&#xa;HASHTAGS:&#xa;#marketing #ppc #tips&#xa;&#xa;ASSETS:&#xa;[thumb][thumb][+add]&#xa;─────────────────────&#xa;[Regenerate All]&#xa;[Save] [Approve]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
           <mxGeometry x="1060" y="120" width="170" height="380" as="geometry" />
         </mxCell>
         
@@ -117,7 +117,7 @@
           <mxGeometry x="1460" y="120" width="180" height="270" as="geometry" />
         </mxCell>
         
-        <mxCell id="page-generating" value="GENERATING...&#xa;─────────────────────&#xa;Video 3 of 18&#xa;&#xa;[Progress bar 15%]&#xa;&#xa;Steps:&#xa;1. Script ready&#xa;2. HeyGen processing...&#xa;3. Submagic pending&#xa;4. Final render pending&#xa;&#xa;Estimated: 25 min left&#xa;&#xa;─────────────────────&#xa;[Cancel] [Run Background]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+        <mxCell id="page-generating" value="GENERATING...&#xa;─────────────────────&#xa;Video 3 of 18&#xa;&#xa;[Progress bar 15%]&#xa;&#xa;Steps:&#xa;1. Script ready&#xa;2. HeyGen (avatar)...&#xa;3. Submagic (subtitles)&#xa;4. Final render&#xa;&#xa;Estimated: 25 min left&#xa;&#xa;─────────────────────&#xa;[Cancel] [Run Background]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
           <mxGeometry x="1460" y="410" width="180" height="210" as="geometry" />
         </mxCell>
         

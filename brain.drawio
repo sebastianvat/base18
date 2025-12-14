@@ -514,4 +514,119 @@
       </root>
     </mxGraphModel>
   </diagram>
+  <diagram id="plan" name="4. IMPLEMENTATION PLAN">
+    <mxGraphModel dx="2000" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="p0" />
+        <mxCell id="p1" parent="p0" />
+        
+        <mxCell id="p-title" value="BRAIN APP - IMPLEMENTATION PLAN (10 ZILE)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=28;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="p1">
+          <mxGeometry x="700" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- TIMELINE -->
+        <mxCell id="p-timeline" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E5E7EB;strokeColor=none;" vertex="1" parent="p1">
+          <mxGeometry x="40" y="100" width="1920" height="8" as="geometry" />
+        </mxCell>
+        
+        <!-- ZIUA 1-2: DATABASE -->
+        <mxCell id="p-phase1" value="ZIUA 1-2: DATABASE" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="p1">
+          <mxGeometry x="40" y="130" width="180" height="25" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p-db-tasks" value="TASKS:&#xa;─────────────────────&#xa;[x] 015_campaigns_table.sql&#xa;    - campaigns (id, brand_id,&#xa;      name, month, status,&#xa;      topics, distribution)&#xa;&#xa;[x] 016_topic_templates.sql&#xa;    - Default topics list&#xa;&#xa;[x] ALTER posts&#xa;    ADD campaign_id&#xa;&#xa;[x] ALTER videos&#xa;    ADD campaign_id&#xa;&#xa;[x] Run migrations&#xa;[x] Test locally" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="p1">
+          <mxGeometry x="40" y="165" width="180" height="250" as="geometry" />
+        </mxCell>
+        
+        <!-- ZIUA 3-4: CAMPAIGNS -->
+        <mxCell id="p-phase2" value="ZIUA 3-4: CAMPAIGNS" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="p1">
+          <mxGeometry x="240" y="130" width="180" height="25" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p-camp-tasks" value="PAGES:&#xa;─────────────────────&#xa;[x] /dashboard/campaigns&#xa;    - List all campaigns&#xa;    - Filter by brand&#xa;    - Status badges&#xa;&#xa;[x] /dashboard/campaigns/new&#xa;    - Step 1: Setup (month)&#xa;    - Step 2: Topics&#xa;    - Step 3: Distribution&#xa;    - Step 4: Review&#xa;&#xa;[x] /dashboard/campaigns/[id]&#xa;    - Campaign dashboard&#xa;    - Progress stats&#xa;    - Quick actions&#xa;&#xa;COMPONENTS:&#xa;[x] CampaignCard.tsx&#xa;[x] CampaignWizard.tsx&#xa;[x] TopicSelector.tsx" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="p1">
+          <mxGeometry x="240" y="165" width="180" height="320" as="geometry" />
+        </mxCell>
+        
+        <!-- ZIUA 5: DASHBOARD UPDATE -->
+        <mxCell id="p-phase3" value="ZIUA 5: DASHBOARD" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="p1">
+          <mxGeometry x="440" y="130" width="180" height="25" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p-dash-tasks" value="MODIFY:&#xa;─────────────────────&#xa;[x] dashboard/page.tsx&#xa;    - Brand selector header&#xa;    - Campaigns grid&#xa;    - Active/Planning/Done&#xa;    - Quick actions&#xa;&#xa;[x] layout.tsx (sidebar)&#xa;    - Dashboard&#xa;    - Campaigns (NEW)&#xa;    - Assets (NEW)&#xa;    - Videos&#xa;    - Brands&#xa;    - Settings&#xa;&#xa;[x] Header component&#xa;    - Brand dropdown&#xa;    - Credits display" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="p1">
+          <mxGeometry x="440" y="165" width="180" height="260" as="geometry" />
+        </mxCell>
+        
+        <!-- ZIUA 6: ASSETS + ONBOARDING -->
+        <mxCell id="p-phase4" value="ZIUA 6: ASSETS" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="p1">
+          <mxGeometry x="640" y="130" width="180" height="25" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p-assets-tasks" value="NEW PAGE:&#xa;─────────────────────&#xa;[x] /dashboard/assets&#xa;    - Reuse AssetGrid&#xa;    - Tab navigation&#xa;    - Upload button&#xa;    - Bulk actions&#xa;    - Filter by brand&#xa;&#xa;COMPONENTS:&#xa;[x] AssetUploader.tsx&#xa;    (if not exists)&#xa;&#xa;[x] Empty state&#xa;    No assets yet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="p1">
+          <mxGeometry x="640" y="165" width="180" height="200" as="geometry" />
+        </mxCell>
+        
+        <!-- ZIUA 7: ONBOARDING -->
+        <mxCell id="p-phase5" value="ZIUA 7: ONBOARDING" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="p1">
+          <mxGeometry x="840" y="130" width="180" height="25" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p-onboard-tasks" value="NEW PAGES:&#xa;─────────────────────&#xa;[x] /onboarding/step-1&#xa;    - Welcome screen&#xa;    - What BRAIN does&#xa;&#xa;[x] /onboarding/step-2&#xa;    - Add first brand&#xa;    - URL input&#xa;    - AI scan&#xa;&#xa;[x] /onboarding/step-3&#xa;    - All set!&#xa;    - Quick tour option&#xa;    - Go to dashboard&#xa;&#xa;LOGIC:&#xa;[x] Check onboarding_completed&#xa;[x] Redirect if false&#xa;[x] Set true after step 3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="p1">
+          <mxGeometry x="840" y="165" width="180" height="280" as="geometry" />
+        </mxCell>
+        
+        <!-- ZIUA 8: PRICING -->
+        <mxCell id="p-phase6" value="ZIUA 8: PRICING" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="p1">
+          <mxGeometry x="1040" y="130" width="180" height="25" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p-pricing-tasks" value="NEW PAGE:&#xa;─────────────────────&#xa;[x] /pricing&#xa;    - 3 plans cards&#xa;    - Starter 29 EUR&#xa;    - Pro 79 EUR&#xa;    - Agency 199 EUR&#xa;&#xa;[x] Buy credits section&#xa;    - 5 EUR/video&#xa;    - Buy 10/20/50&#xa;&#xa;[x] Current plan badge&#xa;[x] Billing history link&#xa;&#xa;INTEGRATION:&#xa;[x] Stripe checkout&#xa;    (if not exists)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF6D00;strokeColor=#E65100;fontColor=#ffffff;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="p1">
+          <mxGeometry x="1040" y="165" width="180" height="240" as="geometry" />
+        </mxCell>
+        
+        <!-- ZIUA 9: INTEGRATION -->
+        <mxCell id="p-phase7" value="ZIUA 9: INTEGRATION" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="p1">
+          <mxGeometry x="1240" y="130" width="180" height="25" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p-integ-tasks" value="CONNECT:&#xa;─────────────────────&#xa;[x] Content wizard&#xa;    → Campaign wizard&#xa;    Use same APIs&#xa;&#xa;[x] Calendar view&#xa;    Filter by campaign_id&#xa;&#xa;[x] Video generation&#xa;    Link to campaign&#xa;&#xa;[x] Posts&#xa;    Link to campaign&#xa;&#xa;CLEANUP:&#xa;[x] Remove old CTAs&#xa;[x] Update redirects&#xa;[x] Deprecate /content/new" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0066FF;strokeColor=#0044AA;fontColor=#ffffff;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="p1">
+          <mxGeometry x="1240" y="165" width="180" height="250" as="geometry" />
+        </mxCell>
+        
+        <!-- ZIUA 10: TESTING -->
+        <mxCell id="p-phase8" value="ZIUA 10: TESTING" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="p1">
+          <mxGeometry x="1440" y="130" width="180" height="25" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="p-test-tasks" value="TEST FLOWS:&#xa;─────────────────────&#xa;[x] New user&#xa;    Register → Onboard →&#xa;    Brand → Campaign&#xa;&#xa;[x] Returning user&#xa;    Login → Dashboard →&#xa;    New campaign (short)&#xa;&#xa;[x] Multi-brand&#xa;    Switch → See campaigns&#xa;&#xa;[x] Video generation&#xa;    n8n → HeyGen → Submagic&#xa;&#xa;EMPTY STATES:&#xa;[x] No brands&#xa;[x] No campaigns&#xa;[x] No assets&#xa;[x] No videos&#xa;&#xa;CREDITS:&#xa;[x] Low warning&#xa;[x] Block if 0" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="p1">
+          <mxGeometry x="1440" y="165" width="180" height="320" as="geometry" />
+        </mxCell>
+        
+        <!-- DEPLOY -->
+        <mxCell id="p-deploy" value="DEPLOY&#xa;─────────&#xa;Vercel&#xa;Production" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;align=center;fontSize=11;fontStyle=1;" vertex="1" parent="p1">
+          <mxGeometry x="1640" y="165" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow to deploy -->
+        <mxCell id="p-arrow-deploy" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#82b366;" edge="1" parent="p1" source="p-test-tasks" target="p-deploy">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- SUMMARY BOX -->
+        <mxCell id="p-summary" value="SUMMARY&#xa;────────────────────────────────────────────────────────────────────&#xa;&#xa;TOTAL: 10 zile lucratoare | RESPONSABIL: COSMIN | DEADLINE: 2024-12-27&#xa;&#xa;PRIORITATI:&#xa;1. Database (fara asta nu merge nimic)&#xa;2. Campaigns (core feature nou)&#xa;3. Dashboard (user vede campaigns)&#xa;4. Assets + Onboarding (complete flow)&#xa;5. Pricing + Integration + Testing&#xa;&#xa;DEPENDINTE EXTERNE:&#xa;- n8n workflow functional (RICARDO)&#xa;- HeyGen API key activ&#xa;- Stripe account (pentru pricing)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=15;fontSize=11;verticalAlign=top;spacingTop=10;" vertex="1" parent="p1">
+          <mxGeometry x="40" y="520" width="700" height="180" as="geometry" />
+        </mxCell>
+        
+        <!-- FILES TO CREATE -->
+        <mxCell id="p-files" value="FILES TO CREATE:&#xa;────────────────────────────────────────────────────&#xa;&#xa;DATABASE:&#xa;  supabase/migrations/015_campaigns_table.sql&#xa;  supabase/migrations/016_topic_templates.sql&#xa;&#xa;PAGES (12 new):&#xa;  src/app/(onboarding)/step-1/page.tsx&#xa;  src/app/(onboarding)/step-2/page.tsx&#xa;  src/app/(onboarding)/step-3/page.tsx&#xa;  src/app/(dashboard)/dashboard/campaigns/page.tsx&#xa;  src/app/(dashboard)/dashboard/campaigns/new/page.tsx&#xa;  src/app/(dashboard)/dashboard/campaigns/[id]/page.tsx&#xa;  src/app/(dashboard)/dashboard/assets/page.tsx&#xa;  src/app/(public)/pricing/page.tsx&#xa;&#xa;COMPONENTS (4 new):&#xa;  src/components/campaigns/CampaignCard.tsx&#xa;  src/components/campaigns/CampaignWizard.tsx&#xa;  src/components/campaigns/TopicSelector.tsx&#xa;  src/components/campaigns/DistributionSliders.tsx" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=15;fontSize=10;verticalAlign=top;spacingTop=10;fontFamily=monospace;" vertex="1" parent="p1">
+          <mxGeometry x="760" y="520" width="440" height="340" as="geometry" />
+        </mxCell>
+        
+        <!-- MODIFY FILES -->
+        <mxCell id="p-modify" value="FILES TO MODIFY:&#xa;────────────────────────────────────────────────────&#xa;&#xa;DASHBOARD:&#xa;  src/app/(dashboard)/dashboard/page.tsx&#xa;  src/app/(dashboard)/layout.tsx&#xa;&#xa;CONTENT (integrate):&#xa;  src/components/content/content-wizard.tsx&#xa;  → Move logic to CampaignWizard&#xa;&#xa;CALENDAR:&#xa;  src/app/(dashboard)/dashboard/calendar/page.tsx&#xa;  → Add campaign_id filter&#xa;&#xa;VIDEOS:&#xa;  src/app/api/video/generate/route.ts&#xa;  → Add campaign_id to creation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=15;fontSize=10;verticalAlign=top;spacingTop=10;fontFamily=monospace;" vertex="1" parent="p1">
+          <mxGeometry x="1220" y="520" width="340" height="240" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
 </mxfile>

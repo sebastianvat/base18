@@ -91,7 +91,7 @@
           <mxGeometry x="860" y="430" width="180" height="310" as="geometry" />
         </mxCell>
         
-        <mxCell id="page-script-detail" value="SCRIPT DETAIL&#xa;─────────────────────&#xa;Date: Luni, 2 Dec&#xa;Type: EDUCATE&#xa;Status: Draft/Approved&#xa;&#xa;HOOK:&#xa;[editable text area]&#xa;&#xa;BODY:&#xa;[editable text area]&#xa;&#xa;CTA:&#xa;[editable text area]&#xa;&#xa;ASSETS SUGGESTED:&#xa;[thumb][thumb][thumb]&#xa;(click to change)&#xa;&#xa;HASHTAGS:&#xa;[editable tags]&#xa;─────────────────────&#xa;[Regenerate Script]&#xa;[Save] [Approve]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+        <mxCell id="page-script-detail" value="POST DETAIL&#xa;─────────────────────&#xa;Date: Luni, 2 Dec&#xa;Type: EDUCATE&#xa;Status: Draft/Approved&#xa;&#xa;VIDEO SCRIPT (ce zice):&#xa;HOOK: [text area]&#xa;BODY: [text area]&#xa;CTA:  [text area]&#xa;&#xa;POST CAPTION (sub video):&#xa;[editable text area]&#xa;&#xa;HASHTAGS:&#xa;#marketing #ppc #tips&#xa;[edit tags]&#xa;&#xa;ASSETS:&#xa;[thumb][thumb][+add]&#xa;&#xa;─────────────────────&#xa;[Regenerate All]&#xa;[Save] [Approve]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
           <mxGeometry x="1060" y="120" width="170" height="380" as="geometry" />
         </mxCell>
         

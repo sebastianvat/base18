@@ -86,23 +86,27 @@
         </mxCell>
         
         <mxCell id="step3-box" value="CONTENT PLAN (1 Month)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="800" y="180" width="360" height="520" as="geometry" />
+          <mxGeometry x="800" y="180" width="360" height="530" as="geometry" />
         </mxCell>
         
-        <mxCell id="step3-strategy" value="AI GENEREAZA STRATEGIA:&#xa;──────────────────────────────&#xa;&#xa;DISTRIBUTIE CONTINUT (20 posts/luna):&#xa;&#xa;ATTRACT (20%) - 4 posts&#xa;  Hook, opreste scroll, curiozitate&#xa;&#xa;EDUCATE (30%) - 6 posts&#xa;  Tips, how-to, valoare gratuita&#xa;&#xa;ENGAGE (20%) - 4 posts&#xa;  Intrebari, polls, behind scenes&#xa;&#xa;CONVERT (20%) - 4 posts&#xa;  CTA, oferta, testimoniale&#xa;&#xa;RETAIN (10%) - 2 posts&#xa;  Thank you, community, loyalty" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="step3-box">
-          <mxGeometry y="30" width="360" height="200" as="geometry" />
+        <mxCell id="step3-frequency" value="FRECVENTA POSTARI:&#xa;──────────────────────────────&#xa;Cate postari vrei pe luna?&#xa;&#xa;○ 10 posts/luna (2-3/saptamana)&#xa;○ 20 posts/luna (5/saptamana) [RECOMANDAT]&#xa;○ 30 posts/luna (1/zi)&#xa;○ 50 posts/luna (2/zi)&#xa;○ Custom: [____] posts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=10;fontSize=10;fontStyle=1;" vertex="1" parent="step3-box">
+          <mxGeometry y="30" width="360" height="110" as="geometry" />
         </mxCell>
         
-        <mxCell id="step3-calendar" value="CALENDAR PREVIEW:&#xa;──────────────────────────────&#xa;Week 1:&#xa;  Luni    - EDUCATE - &quot;5 greseli PPC...&quot;&#xa;  Marti   - ATTRACT - &quot;Stiai ca 80%...&quot;&#xa;  Joi     - ENGAGE  - &quot;Ce platforma...&quot;&#xa;  Vineri  - EDUCATE - &quot;Cum masori ROI&quot;&#xa;&#xa;Week 2:&#xa;  Luni    - CONVERT - &quot;Oferta speciala&quot;&#xa;  Miercuri- EDUCATE - &quot;3 tools free...&quot;&#xa;  ...&#xa;&#xa;[View Full Calendar]  [Edit Distribution]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=10;fontFamily=Courier New;" vertex="1" parent="step3-box">
-          <mxGeometry y="230" width="360" height="170" as="geometry" />
+        <mxCell id="step3-strategy" value="AI DISTRIBUIE AUTOMAT:&#xa;──────────────────────────────&#xa;ATTRACT (20%) - hook, curiozitate&#xa;EDUCATE (30%) - tips, how-to, valoare&#xa;ENGAGE (20%) - intrebari, polls&#xa;CONVERT (20%) - CTA, oferta, testimoniale&#xa;RETAIN (10%) - thank you, community&#xa;&#xa;[Edit Distribution %]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="step3-box">
+          <mxGeometry y="140" width="360" height="120" as="geometry" />
         </mxCell>
         
-        <mxCell id="step3-user" value="USER ACTION:&#xa;──────────────────────────────&#xa;○ Approve all scripts&#xa;○ Edit individual scripts (click to expand)&#xa;○ Regenerate script (AI retry)&#xa;○ Change distribution %&#xa;○ Move posts between days&#xa;○ Add/remove posts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="step3-box">
-          <mxGeometry y="400" width="360" height="90" as="geometry" />
+        <mxCell id="step3-calendar" value="CALENDAR PREVIEW (exemplu 20 posts):&#xa;──────────────────────────────&#xa;Week 1: Lu-EDUCATE | Ma-ATTRACT | Jo-ENGAGE | Vi-EDUCATE&#xa;Week 2: Lu-CONVERT | Mi-EDUCATE | Vi-ATTRACT | ...&#xa;Week 3: ...&#xa;Week 4: ...&#xa;&#xa;Click pe post = vezi script complet&#xa;&#xa;[View Full Calendar] [Regenerate All Scripts]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=10;fontFamily=Courier New;" vertex="1" parent="step3-box">
+          <mxGeometry y="260" width="360" height="130" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="step3-user" value="USER ACTION:&#xa;──────────────────────────────&#xa;○ Approve all scripts&#xa;○ Edit individual scripts (click to expand)&#xa;○ Regenerate script (AI retry)&#xa;○ Change distribution % sau frequency&#xa;○ Move posts between days" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="step3-box">
+          <mxGeometry y="390" width="360" height="80" as="geometry" />
         </mxCell>
         
         <mxCell id="step3-btn" value="[Approve Content Plan]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;fontStyle=1;fontSize=11;" vertex="1" parent="step3-box">
-          <mxGeometry y="490" width="360" height="30" as="geometry" />
+          <mxGeometry y="470" width="360" height="30" as="geometry" />
         </mxCell>
         
         <!-- Arrow 3→4 -->

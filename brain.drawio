@@ -36,8 +36,8 @@
           <mxGeometry x="600" y="80" width="120" height="30" as="geometry" />
         </mxCell>
         
-        <mxCell id="page-dashboard" value="DASHBOARD (Home)&#xa;─────────────────────&#xa;HEADER:&#xa;- Logo&#xa;- Brand selector (dropdown)&#xa;- Credits: 15/20&#xa;- Profile menu&#xa;&#xa;SIDEBAR:&#xa;- Dashboard&#xa;- Brands&#xa;- Content Plan&#xa;- Videos&#xa;- Analytics (soon)&#xa;- Settings&#xa;&#xa;MAIN:&#xa;- Quick stats (videos, posts)&#xa;- Recent videos&#xa;- Upcoming scheduled&#xa;- [+ New Video] CTA&#xa;&#xa;─────────────────────&#xa;[+ Create New Brand]&#xa;[+ Generate Content]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="600" y="120" width="200" height="340" as="geometry" />
+        <mxCell id="page-dashboard" value="DASHBOARD (Home)&#xa;─────────────────────&#xa;HEADER:&#xa;- Logo&#xa;- Brand: [Transilvania v]&#xa;- Credits: 45&#xa;- Profile menu&#xa;&#xa;SIDEBAR:&#xa;- Dashboard&#xa;- Campaigns&#xa;- Assets&#xa;- Videos&#xa;- Analytics (soon)&#xa;- Settings&#xa;&#xa;CAMPAIGNS (for selected brand):&#xa;+------------------+&#xa;| DEC 2025: Active |&#xa;| 18/20 videos     |&#xa;| [Continue]       |&#xa;+------------------+&#xa;| JAN 2026         |&#xa;| [Start Campaign] |&#xa;+------------------+&#xa;&#xa;ARCHIVE:&#xa;- Nov 2025: Done&#xa;─────────────────────&#xa;[+ New Campaign]&#xa;[+ Add Brand]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="120" width="200" height="400" as="geometry" />
         </mxCell>
         
         <!-- ==================== BRAND SECTION ==================== -->
@@ -313,8 +313,61 @@
         </mxCell>
         
         <!-- TIME ESTIMATE -->
-        <mxCell id="f-time" value="TIMP TOTAL USER: ~20-30 minute/luna (dupa setup initial)" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="f1">
+        <mxCell id="f-time" value="TIMP: First campaign ~30min | Next campaigns ~10-15min" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="f1">
           <mxGeometry x="600" y="320" width="500" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- RETURNING USER FLOW -->
+        <mxCell id="f-return-title" value="RETURNING USER (Luna 2+)" style="text;html=1;strokeColor=none;fillColor=#9673a6;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="f1">
+          <mxGeometry x="40" y="480" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="f-return1" value="Dashboard&#xa;────────────&#xa;See campaigns&#xa;Click [Start&#xa;January]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;fontSize=10;fontStyle=1;" vertex="1" parent="f1">
+          <mxGeometry x="40" y="520" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="f-return-arr1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#9673a6;" edge="1" parent="f1" source="f-return1" target="f-return2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="f-return2" value="Topics&#xa;────────────&#xa;AI prefilled&#xa;from brand&#xa;[Approve]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;fontSize=10;fontStyle=1;" vertex="1" parent="f1">
+          <mxGeometry x="180" y="520" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="f-return-arr2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#9673a6;" edge="1" parent="f1" source="f-return2" target="f-return3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="f-return3" value="Calendar&#xa;────────────&#xa;AI generates&#xa;20 new posts&#xa;[Approve]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=center;fontSize=10;fontStyle=1;" vertex="1" parent="f1">
+          <mxGeometry x="320" y="520" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="f-return-arr3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#9673a6;" edge="1" parent="f1" source="f-return3" target="f-return4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="f-return4" value="Avatar&#xa;────────────&#xa;[Keep Dec]&#xa;or [Change]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=center;fontSize=10;fontStyle=1;" vertex="1" parent="f1">
+          <mxGeometry x="460" y="520" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="f-return-arr4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#9673a6;" edge="1" parent="f1" source="f-return4" target="f-return5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="f-return5" value="Generate&#xa;────────────&#xa;HeyGen +&#xa;Submagic" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF6D00;strokeColor=#E65100;fontColor=#ffffff;align=center;fontSize=10;fontStyle=1;" vertex="1" parent="f1">
+          <mxGeometry x="600" y="520" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="f-return-arr5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#9673a6;" edge="1" parent="f1" source="f-return5" target="f-return6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="f-return6" value="Schedule&#xa;────────────&#xa;Same as Dec&#xa;or custom" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0066FF;strokeColor=#0044AA;fontColor=#ffffff;align=center;fontSize=10;fontStyle=1;" vertex="1" parent="f1">
+          <mxGeometry x="740" y="520" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="f-return-note" value="SKIP: Brand Setup, Assets (already done)" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=11;fontColor=#1a1a2e;" vertex="1" parent="f1">
+          <mxGeometry x="40" y="620" width="300" height="25" as="geometry" />
         </mxCell>
         
         <!-- TECH STACK -->
@@ -342,6 +395,120 @@
         </mxCell>
         <mxCell id="f-tech7" value="Late API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0066FF;strokeColor=#0044AA;fontColor=#ffffff;fontSize=10;fontStyle=1;" vertex="1" parent="f1">
           <mxGeometry x="480" y="410" width="70" height="30" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="campaigns" name="3. CAMPAIGNS SYSTEM">
+    <mxGraphModel dx="2000" dy="1400" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="c0" />
+        <mxCell id="c1" parent="c0" />
+        
+        <mxCell id="c-title" value="BRAIN APP - CAMPAIGNS SYSTEM" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=28;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="c1">
+          <mxGeometry x="800" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="c-subtitle" value="Campaign = Content plan pentru o luna/perioada. Brand poate avea multiple campaigns." style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="c1">
+          <mxGeometry x="700" y="60" width="800" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- ==================== DASHBOARD WITH CAMPAIGNS ==================== -->
+        <mxCell id="c-dash-title" value="DASHBOARD (Updated)" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="c1">
+          <mxGeometry x="40" y="120" width="180" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="c-dashboard" value="DASHBOARD&#xa;─────────────────────────────&#xa;HEADER:&#xa;Brand: [Transilvania Mkt v]  Credits: 45&#xa;&#xa;─────────────────────────────&#xa;CAMPAIGNS FOR THIS BRAND:&#xa;&#xa;+------------------+------------------+&#xa;| DECEMBRIE 2025   | IANUARIE 2026    |&#xa;| ================ | ================ |&#xa;| Status: Active   | Status: Planning |&#xa;| 18/20 videos     | 0/20 videos      |&#xa;| 15 scheduled     | -                |&#xa;| 3 published      | -                |&#xa;|                  |                  |&#xa;| [Continue]       | [Start Campaign] |&#xa;+------------------+------------------+&#xa;&#xa;CAMPAIGNS ARCHIVE:&#xa;- Noiembrie 2025: Completed (20 videos)&#xa;- Octombrie 2025: Completed (15 videos)&#xa;&#xa;─────────────────────────────&#xa;[+ New Campaign]  [+ Add New Brand]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;fontStyle=1;" vertex="1" parent="c1">
+          <mxGeometry x="40" y="160" width="300" height="360" as="geometry" />
+        </mxCell>
+        
+        <!-- ==================== DATA MODEL ==================== -->
+        <mxCell id="c-model-title" value="DATA MODEL" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="c1">
+          <mxGeometry x="400" y="120" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="c-model" value="DATABASE STRUCTURE:&#xa;─────────────────────────────&#xa;&#xa;USER&#xa; |&#xa; +-- BRAND (1:many)&#xa;      |&#xa;      +-- CAMPAIGN (1:many)&#xa;           |&#xa;           +-- content_plan&#xa;           +-- topics[]&#xa;           +-- distribution{}&#xa;           +-- avatar_id&#xa;           +-- posts[] (1:many)&#xa;           +-- videos[] (1:many)&#xa;           +-- status: planning/active/&#xa;                       completed&#xa;           +-- month: '2025-12'&#xa;&#xa;─────────────────────────────&#xa;CAMPAIGN STATUSES:&#xa;- planning: configurare&#xa;- active: genereaza/publica&#xa;- completed: luna trecuta" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;fontFamily=monospace;" vertex="1" parent="c1">
+          <mxGeometry x="400" y="160" width="240" height="340" as="geometry" />
+        </mxCell>
+        
+        <!-- ==================== USER SCENARIOS ==================== -->
+        <mxCell id="c-scenarios-title" value="USER SCENARIOS" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="c1">
+          <mxGeometry x="700" y="120" width="140" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Scenario 1: New User -->
+        <mxCell id="c-scenario1" value="SCENARIO 1: NEW USER&#xa;─────────────────────────────&#xa;Prima vizita, nu are nimic&#xa;&#xa;FLOW:&#xa;Login/Register&#xa;    |&#xa;    v&#xa;Onboarding (3 screens)&#xa;    |&#xa;    v&#xa;Brand Setup (URL scan)&#xa;    |&#xa;    v&#xa;Asset Library (upload)&#xa;    |&#xa;    v&#xa;Create First Campaign&#xa;    |&#xa;    v&#xa;Full Campaign Flow..." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;fontStyle=1;" vertex="1" parent="c1">
+          <mxGeometry x="700" y="160" width="220" height="250" as="geometry" />
+        </mxCell>
+        
+        <!-- Scenario 2: Returning User -->
+        <mxCell id="c-scenario2" value="SCENARIO 2: RETURNING USER&#xa;─────────────────────────────&#xa;Are brand, vrea luna noua&#xa;&#xa;FLOW:&#xa;Login&#xa;    |&#xa;    v&#xa;Dashboard&#xa;(vede campaigns existente)&#xa;    |&#xa;    v&#xa;Click [Start January]&#xa;    |&#xa;    v&#xa;SHORT Campaign Flow:&#xa;- Topics (AI prefilled)&#xa;- Distribution (default)&#xa;- Calendar (generate)&#xa;- Avatar (keep or change)&#xa;- Videos&#xa;- Schedule" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;fontStyle=1;" vertex="1" parent="c1">
+          <mxGeometry x="940" y="160" width="220" height="280" as="geometry" />
+        </mxCell>
+        
+        <!-- Scenario 3: Multi-brand -->
+        <mxCell id="c-scenario3" value="SCENARIO 3: MULTI-BRAND&#xa;─────────────────────────────&#xa;Are 2+ branduri (agentie)&#xa;&#xa;FLOW:&#xa;Login&#xa;    |&#xa;    v&#xa;Dashboard&#xa;Brand selector: [Brand A v]&#xa;    |&#xa;    +-- Switch to Brand B&#xa;    |&#xa;    v&#xa;Dashboard shows Brand B&#xa;campaigns&#xa;    |&#xa;    v&#xa;[Start Campaign] for Brand B&#xa;&#xa;─────────────────────────────&#xa;Each brand = separate campaigns&#xa;Each brand = separate assets&#xa;Each brand = separate avatar" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;fontStyle=1;" vertex="1" parent="c1">
+          <mxGeometry x="1180" y="160" width="220" height="300" as="geometry" />
+        </mxCell>
+        
+        <!-- ==================== CAMPAIGN FLOW ==================== -->
+        <mxCell id="c-flow-title" value="CAMPAIGN CREATION FLOW" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="c1">
+          <mxGeometry x="40" y="560" width="220" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="c-flow-new" value="NEW CAMPAIGN (luna noua)&#xa;─────────────────────────────&#xa;&#xa;Step 1: SETUP&#xa;  - Luna: Ianuarie 2026&#xa;  - Frecventa: 20 posts&#xa;  - Tip: VIDEO&#xa;&#xa;Step 2: TOPICS&#xa;  AI: pre-filled din brand&#xa;  User: adjust daca vrea&#xa;&#xa;Step 3: DISTRIBUTION&#xa;  Default: 20/30/20/20/10&#xa;  User: adjust sliders&#xa;&#xa;Step 4: GENERATE CALENDAR&#xa;  AI: creeaza 20 posts&#xa;  User: review/edit&#xa;&#xa;Step 5: AVATAR&#xa;  [Keep December avatar]&#xa;  [Change avatar]&#xa;&#xa;Step 6: GENERATE VIDEOS&#xa;  Mode: Turbo/Control&#xa;&#xa;Step 7: SCHEDULE&#xa;  Platforms + Times" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;fontStyle=1;" vertex="1" parent="c1">
+          <mxGeometry x="40" y="600" width="220" height="400" as="geometry" />
+        </mxCell>
+        
+        <!-- Inherit from previous -->
+        <mxCell id="c-inherit" value="INHERIT FROM PREVIOUS:&#xa;─────────────────────────────&#xa;&#xa;Cand creezi campaign nou:&#xa;&#xa;[x] Topics (din brand)&#xa;[x] Distribution (20/30/20/20/10)&#xa;[x] Avatar (din ultima campanie)&#xa;[x] Platforms (din ultima)&#xa;[x] Posting times (din ultima)&#xa;&#xa;User poate schimba orice,&#xa;dar AI pre-populeaza tot!&#xa;&#xa;─────────────────────────────&#xa;TIMP ESTIMAT:&#xa;&#xa;First campaign: 30 min&#xa;Next campaigns: 10-15 min&#xa;(doar review + generate)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;fontStyle=1;" vertex="1" parent="c1">
+          <mxGeometry x="280" y="600" width="220" height="280" as="geometry" />
+        </mxCell>
+        
+        <!-- Campaign States -->
+        <mxCell id="c-states-title" value="CAMPAIGN STATES" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="c1">
+          <mxGeometry x="540" y="560" width="140" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="c-state1" value="PLANNING&#xa;────────────&#xa;- Configuring&#xa;- No videos yet&#xa;- Can edit all" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;fontSize=10;fontStyle=1;" vertex="1" parent="c1">
+          <mxGeometry x="540" y="600" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="c-state-arrow1" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#666666;" edge="1" parent="c1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="690" as="sourcePoint" />
+            <mxPoint x="600" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="c-state2" value="ACTIVE&#xa;────────────&#xa;- Generating&#xa;- Publishing&#xa;- Current month" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;fontSize=10;fontStyle=1;" vertex="1" parent="c1">
+          <mxGeometry x="540" y="730" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="c-state-arrow2" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#666666;" edge="1" parent="c1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="820" as="sourcePoint" />
+            <mxPoint x="600" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="c-state3" value="COMPLETED&#xa;────────────&#xa;- All published&#xa;- In archive&#xa;- Analytics" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;fontSize=10;fontStyle=1;" vertex="1" parent="c1">
+          <mxGeometry x="540" y="860" width="120" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Quick Actions -->
+        <mxCell id="c-actions-title" value="DASHBOARD ACTIONS" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="c1">
+          <mxGeometry x="700" y="560" width="160" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="c-actions" value="FROM DASHBOARD:&#xa;─────────────────────────────&#xa;&#xa;[+ New Campaign]&#xa;  Start fresh pentru luna noua&#xa;&#xa;[Continue] (pe campaign activ)&#xa;  Continua unde ai ramas:&#xa;  - Finish video generation&#xa;  - Schedule remaining&#xa;  - Review analytics&#xa;&#xa;[View] (pe campaign completed)&#xa;  - See all videos&#xa;  - Download all&#xa;  - Analytics&#xa;&#xa;[Duplicate Campaign]&#xa;  - Copy settings to new month&#xa;  - Just regenerate content&#xa;&#xa;─────────────────────────────&#xa;BRAND SWITCHER:&#xa;  Click dropdown → see all brands&#xa;  Each brand shows its campaigns" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="c1">
+          <mxGeometry x="700" y="600" width="240" height="340" as="geometry" />
+        </mxCell>
+        
+        <!-- Summary Box -->
+        <mxCell id="c-summary" value="SUMMARY&#xa;─────────────────────────────────────────&#xa;&#xa;CAMPAIGN = unitatea de lucru (1 luna content)&#xa;&#xa;BRAND contine: info + assets + campaigns[]&#xa;&#xa;FIRST TIME: Full flow (Brand → Assets → Campaign)&#xa;&#xa;RECURRING: Short flow (Topics → Calendar → Videos)&#xa;&#xa;MULTI-BRAND: Switch din dropdown, fiecare cu campaigns proprii&#xa;&#xa;AI PRE-FILLS: Topics, distribution, avatar din previous campaign" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;align=left;spacingLeft=15;fontSize=11;verticalAlign=middle;" vertex="1" parent="c1">
+          <mxGeometry x="980" y="560" width="420" height="180" as="geometry" />
         </mxCell>
         
       </root>

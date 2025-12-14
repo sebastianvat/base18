@@ -1,0 +1,292 @@
+<mxfile host="app.diagrams.net" modified="2025-12-14T10:00:00.000Z" agent="Claude AI" version="22.1.0">
+  <diagram id="brain-app-architecture" name="BRAIN APP Architecture">
+    <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- TITLE -->
+        <mxCell id="title" value="🧠 BRAIN APP - Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="600" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- ==================== MAIN FLOW ==================== -->
+        
+        <!-- INPUT Section -->
+        <mxCell id="input-group" value="📥 INPUT" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="input-1" value="👤 User scrie TOPIC" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="50" y="140" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="input-2" value="🏢 Selectează BRAND" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="50" y="180" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="input-3" value="📱 Alege PLATFORME" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="50" y="220" width="180" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow 1 -->
+        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#6c8ebf;" edge="1" parent="1" source="input-3" target="ai-gen">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- AI GENERATION Section -->
+        <mxCell id="ai-group" value="🤖 AI GENERATION" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-gen" value="🧠 Claude API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="140" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-variants" value="📝 4 Variante Generate&#xa;• Hook&#xa;• Story&#xa;• Listicle&#xa;• Educational" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="310" y="190" width="180" height="70" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow 2 -->
+        <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#82b366;" edge="1" parent="1" source="ai-variants" target="select-diamond">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Decision Diamond -->
+        <mxCell id="select-diamond" value="User&#xa;Selectează" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="160" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- VIDEO Section -->
+        <mxCell id="video-group" value="🎬 VIDEO GENERATION" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="100" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="video-script" value="📜 Script Adaptat" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="730" y="140" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="video-heygen" value="🎭 HeyGen API&#xa;Avatar + Voice" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="180" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="video-output" value="📹 Video MP4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="230" width="180" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow to Video -->
+        <mxCell id="arrow3" value="Cu Video" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#b85450;fontStyle=1;" edge="1" parent="1" source="select-diamond" target="video-script">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- SCHEDULE Section -->
+        <mxCell id="schedule-group" value="📅 SCHEDULING" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="100" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule-editor" value="✏️ Editor Final" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="990" y="140" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule-late" value="⏰ Late API&#xa;Auto-Scheduling" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="180" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule-post" value="🚀 AUTO-POST" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="230" width="180" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow Video to Schedule -->
+        <mxCell id="arrow4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#9673a6;" edge="1" parent="1" source="video-output" target="schedule-editor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow Text Only -->
+        <mxCell id="arrow5" value="Text Only" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#82b366;fontStyle=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="select-diamond" target="schedule-editor">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="300" />
+              <mxPoint x="1080" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- ==================== PLATFORMS ==================== -->
+        
+        <mxCell id="platforms-title" value="📱 PLATFORME SUPORTATE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="100" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="platform-ig" value="📸 Instagram&#xa;Feed, Stories, Reels" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E4405F;strokeColor=#C13584;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="140" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="platform-tiktok" value="🎵 TikTok&#xa;Videos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#25F4EE;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="200" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="platform-fb" value="📘 Facebook&#xa;Posts, Reels" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1877F2;strokeColor=#0d5fbb;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="140" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="platform-li" value="💼 LinkedIn&#xa;Posts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0A66C2;strokeColor=#004182;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="200" width="150" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow to platforms -->
+        <mxCell id="arrow6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#82b366;" edge="1" parent="1" source="schedule-post" target="platform-ig">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1200" y="245" />
+              <mxPoint x="1200" y="165" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- ==================== TECH STACK ==================== -->
+        
+        <mxCell id="tech-title" value="🏗️ TECH STACK" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="200" y="360" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Frontend -->
+        <mxCell id="tech-frontend" value="🖥️ FRONTEND" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="400" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-nextjs" value="Next.js 14" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="tech-frontend">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-react" value="React 18" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="tech-frontend">
+          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-tailwind" value="TailwindCSS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="tech-frontend">
+          <mxGeometry y="78" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-shadcn" value="shadcn/ui" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="tech-frontend">
+          <mxGeometry y="104" width="160" height="26" as="geometry" />
+        </mxCell>
+        
+        <!-- Backend -->
+        <mxCell id="tech-backend" value="⚙️ BACKEND" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="400" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-supabase" value="Supabase" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;" vertex="1" parent="tech-backend">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-postgres" value="PostgreSQL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="tech-backend">
+          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-edge" value="Edge Functions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="tech-backend">
+          <mxGeometry y="78" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-storage" value="Storage (videos)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="tech-backend">
+          <mxGeometry y="104" width="160" height="26" as="geometry" />
+        </mxCell>
+        
+        <!-- External APIs -->
+        <mxCell id="tech-apis" value="🔌 EXTERNAL APIs" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="400" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-claude" value="🧠 Claude AI&#xa;Text Generation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="tech-apis">
+          <mxGeometry y="26" width="160" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-heygen" value="🎬 HeyGen&#xa;Video Generation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="tech-apis">
+          <mxGeometry y="60" width="160" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="tech-late" value="📅 Late API&#xa;Social Posting" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="tech-apis">
+          <mxGeometry y="94" width="160" height="36" as="geometry" />
+        </mxCell>
+        
+        <!-- Deploy -->
+        <mxCell id="tech-deploy" value="🚀 DEPLOY&#xa;&#xa;Vercel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#333333;fontColor=#ffffff;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="580" y="420" width="100" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- ==================== TEAM STRUCTURE ==================== -->
+        
+        <mxCell id="team-title" value="👥 ECHIPA BRAIN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="900" y="360" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="team-sebastian" value="👔 SEBASTIAN&#xa;CEO" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="400" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="team-turu" value="🎯 TURU&#xa;Product Manager" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="490" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="team-cosmin" value="💻 COSMIN&#xa;Full-Stack Lead" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="580" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="team-bogdan" value="🤖 BOGDAN&#xa;AI Integration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="580" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="team-maria" value="🎨 MARIA&#xa;UX Design" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="580" width="100" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Team arrows -->
+        <mxCell id="team-arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="team-sebastian" target="team-turu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="team-arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="team-turu" target="team-cosmin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="team-arrow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="team-turu" target="team-bogdan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="team-arrow4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="team-turu" target="team-maria">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- ==================== PRICING ==================== -->
+        
+        <mxCell id="pricing-title" value="💰 PRICING TIERS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="360" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="pricing-starter" value="⭐ STARTER&#xa;29€/lună&#xa;5 video-uri" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="400" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pricing-pro" value="🚀 PRO&#xa;79€/lună&#xa;20 video-uri" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="400" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pricing-agency" value="🏢 AGENCY&#xa;199€/lună&#xa;60 video-uri" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="400" width="100" height="70" as="geometry" />
+        </mxCell>
+        
+        <!-- Credits info -->
+        <mxCell id="credits-info" value="📊 CREDITS:&#xa;• 30s video = 1 credit&#xa;• 60s video = 2 credite&#xa;• Preview = FREE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="490" width="140" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- ==================== DATA MODEL ==================== -->
+        
+        <mxCell id="data-title" value="📦 DATA MODEL" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="200" y="560" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="model-brand" value="🏢 BRAND&#xa;─────────&#xa;id, name&#xa;industry&#xa;tone, style&#xa;content_rules" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="40" y="600" width="130" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="model-post" value="📝 CONTENT_POST&#xa;─────────────&#xa;id, brand_id&#xa;topic, variants&#xa;final_text&#xa;has_video, status" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="200" y="600" width="140" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="model-video" value="🎬 VIDEO&#xa;────────&#xa;id, post_id&#xa;script&#xa;video_url&#xa;avatar_id" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=10;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="370" y="600" width="120" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="model-scheduled" value="📅 SCHEDULED_POST&#xa;───────────────&#xa;id, post_id&#xa;platform&#xa;scheduled_time&#xa;status" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="520" y="600" width="150" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Model arrows -->
+        <mxCell id="model-arrow1" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontStyle=1;" edge="1" parent="1" source="model-brand" target="model-post">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="model-arrow2" value="1:1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontStyle=1;" edge="1" parent="1" source="model-post" target="model-video">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="model-arrow3" value="1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontStyle=1;" edge="1" parent="1" source="model-post" target="model-scheduled">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- ==================== FOOTER ==================== -->
+        
+        <mxCell id="footer" value="📅 Actualizat: 2025-12-14 | 🧠 BRAIN APP v1.0 | Transilvania Business Suite" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="500" y="740" width="400" height="30" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

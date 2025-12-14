@@ -1,240 +1,280 @@
-<mxfile host="app.diagrams.net" modified="2025-12-14T17:00:00.000Z" agent="TBS" version="22.1.0">
-  <diagram id="brain-app-flow" name="BRAIN APP - Services Flow">
-    <mxGraphModel dx="1800" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2025-12-14T18:00:00.000Z" agent="TBS" version="22.1.0">
+  <diagram id="brain-app-flow" name="BRAIN APP - Complete Flow">
+    <mxGraphModel dx="2000" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1600" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         
-        <mxCell id="title" value="BRAIN APP - Services Flow (MVP)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=28;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
-          <mxGeometry x="660" y="20" width="600" height="50" as="geometry" />
+        <mxCell id="title" value="BRAIN APP - Complete User Flow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="900" y="20" width="600" height="50" as="geometry" />
         </mxCell>
         
-        <mxCell id="subtitle" value="Target: Agentii | Consultanti | SaaS | Professional Services" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="710" y="70" width="500" height="30" as="geometry" />
+        <mxCell id="principle" value="PRINCIPIU: AI recomanda TOT - User verifica/modifica daca vrea" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=16;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="800" y="70" width="800" height="35" as="geometry" />
         </mxCell>
         
-        <mxCell id="step1-title" value="STEP 1" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="40" y="120" width="60" height="25" as="geometry" />
+        <!-- ==================== STEP 1: BRAND SETUP ==================== -->
+        
+        <mxCell id="step1-num" value="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;fontStyle=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="40" y="130" width="40" height="40" as="geometry" />
         </mxCell>
         
-        <mxCell id="brand-setup" value="BRAND SETUP" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=35;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="40" y="150" width="280" height="280" as="geometry" />
+        <mxCell id="step1-box" value="BRAND SETUP" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="320" height="420" as="geometry" />
         </mxCell>
         
-        <mxCell id="brand-info" value="INFO BASIC&#xa;- Nume companie&#xa;- Website URL&#xa;- Industry (dropdown)&#xa;- Logo upload" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="brand-setup">
-          <mxGeometry y="35" width="280" height="80" as="geometry" />
+        <mxCell id="step1-input" value="INPUT: Website URL&#xa;─────────────────────────&#xa;User pune doar: www.site.com" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=11;fontStyle=1;" vertex="1" parent="step1-box">
+          <mxGeometry y="30" width="320" height="50" as="geometry" />
         </mxCell>
         
-        <mxCell id="brand-voice" value="VOICE and TONE&#xa;- Ton: Professional / Friendly / Bold&#xa;- Personality: 3 adjective&#xa;- Language: RO / EN" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="brand-setup">
-          <mxGeometry y="115" width="280" height="80" as="geometry" />
+        <mxCell id="step1-ai" value="AI SCAN + RECOMANDA:&#xa;─────────────────────────&#xa;[x] Company Name: &quot;Transilvania Mkt&quot;&#xa;[x] Industry: Marketing Agency&#xa;[x] Tone: Professional, Friendly&#xa;[x] Personality: Expert, Approachable&#xa;[x] Language: Romanian&#xa;[x] Colors: #1a1a2e, #6c8ebf&#xa;[x] Logo: (extracted)&#xa;&#xa;Services detected:&#xa;[x] PPC Advertising&#xa;[x] Social Media&#xa;[x] SEO&#xa;[x] Web Development" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="step1-box">
+          <mxGeometry y="80" width="320" height="190" as="geometry" />
         </mxCell>
         
-        <mxCell id="brand-services" value="SERVICII OFERITE&#xa;- Lista servicii (text sau import)&#xa;- USP - ce te diferentiaza?&#xa;- Target audience" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="brand-setup">
-          <mxGeometry y="195" width="280" height="85" as="geometry" />
+        <mxCell id="step1-user" value="USER ACTION:&#xa;─────────────────────────&#xa;○ Approve All (quick)&#xa;○ Edit fields (click pencil icon)&#xa;○ Add missing info manually&#xa;&#xa;REQUIRED TO CONTINUE:&#xa;- Company name&#xa;- At least 1 service&#xa;- Tone selection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="step1-box">
+          <mxGeometry y="270" width="320" height="120" as="geometry" />
         </mxCell>
         
-        <mxCell id="ai-scan" value="AI SCAN&#xa;(optional)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="120" y="450" width="80" height="50" as="geometry" />
+        <mxCell id="step1-btn" value="[Approve Brand Profile]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;fontStyle=1;fontSize=11;" vertex="1" parent="step1-box">
+          <mxGeometry y="390" width="320" height="30" as="geometry" />
         </mxCell>
         
-        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#6c8ebf;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="brand-setup" target="asset-library">
+        <!-- Arrow 1→2 -->
+        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#6c8ebf;" edge="1" parent="1" source="step1-box" target="step2-box">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         
-        <mxCell id="step2-title" value="STEP 2" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="380" y="120" width="60" height="25" as="geometry" />
+        <!-- ==================== STEP 2: ASSET LIBRARY ==================== -->
+        
+        <mxCell id="step2-num" value="2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;fontStyle=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="420" y="130" width="40" height="40" as="geometry" />
         </mxCell>
         
-        <mxCell id="asset-library" value="ASSET LIBRARY" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=35;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="380" y="150" width="280" height="280" as="geometry" />
+        <mxCell id="step2-box" value="ASSET LIBRARY" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="420" y="180" width="320" height="420" as="geometry" />
         </mxCell>
         
-        <mxCell id="asset-upload" value="UPLOAD ASSETS&#xa;- Drag and drop images&#xa;- Bulk upload&#xa;- Max 50 per brand (MVP)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="asset-library">
-          <mxGeometry y="35" width="280" height="70" as="geometry" />
+        <mxCell id="step2-ai" value="AI SCAN WEBSITE:&#xa;─────────────────────────&#xa;Found 12 images:&#xa;[x] Logo (1)&#xa;[x] Team photos (3)&#xa;[x] Screenshots (5)&#xa;[x] Icons/Graphics (3)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=10;fontStyle=1;" vertex="1" parent="step2-box">
+          <mxGeometry y="30" width="320" height="100" as="geometry" />
         </mxCell>
         
-        <mxCell id="asset-categories" value="CATEGORII SERVICII&#xa;- Screenshots (website, app, dashboard)&#xa;- Team (poze echipa, office)&#xa;- Results (grafice, stats, testimonials)&#xa;- Branding (logo, colors, patterns)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="asset-library">
-          <mxGeometry y="105" width="280" height="100" as="geometry" />
+        <mxCell id="step2-categories" value="CATEGORII (AI tagged):&#xa;─────────────────────────&#xa;BRANDING: logo, colors, patterns&#xa;TEAM: echipa, office, behind scenes&#xa;SCREENSHOTS: website, dashboard, app&#xa;RESULTS: grafice, stats, testimonials&#xa;CLIENTS: logos clienti, case studies" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="step2-box">
+          <mxGeometry y="130" width="320" height="100" as="geometry" />
         </mxCell>
         
-        <mxCell id="asset-ai-tag" value="AI AUTO-TAGGING&#xa;- Detecteaza continut imagine&#xa;- Sugereaza categorii&#xa;- Matches cu templates" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="asset-library">
-          <mxGeometry y="205" width="280" height="75" as="geometry" />
+        <mxCell id="step2-missing" value="LIPSESTE (AI detecteaza):&#xa;─────────────────────────&#xa;! Testimonials - 0 found&#xa;! Results/Stats - 0 found&#xa;&#xa;[Upload More Assets]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="step2-box">
+          <mxGeometry y="230" width="320" height="90" as="geometry" />
         </mxCell>
         
-        <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#82b366;" edge="1" parent="1" source="asset-library" target="template-select">
+        <mxCell id="step2-user" value="USER ACTION:&#xa;─────────────────────────&#xa;○ Approve extracted assets&#xa;○ Upload additional (drag/drop)&#xa;○ Re-categorize if wrong&#xa;○ Delete unwanted" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="step2-box">
+          <mxGeometry y="320" width="320" height="70" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="step2-btn" value="[Approve Asset Library]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;fontStyle=1;fontSize=11;" vertex="1" parent="step2-box">
+          <mxGeometry y="390" width="320" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Arrow 2→3 -->
+        <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#82b366;" edge="1" parent="1" source="step2-box" target="step3-box">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         
-        <mxCell id="step3-title" value="STEP 3" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="720" y="120" width="60" height="25" as="geometry" />
+        <!-- ==================== STEP 3: CONTENT PLAN ==================== -->
+        
+        <mxCell id="step3-num" value="3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;fontStyle=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="800" y="130" width="40" height="40" as="geometry" />
         </mxCell>
         
-        <mxCell id="template-select" value="VIDEO CREATION" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=35;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="720" y="150" width="280" height="340" as="geometry" />
+        <mxCell id="step3-box" value="CONTENT PLAN (1 Month)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="800" y="180" width="360" height="520" as="geometry" />
         </mxCell>
         
-        <mxCell id="template-choose" value="ALEGE TEMPLATE&#xa;- Agency Intro (prezentare)&#xa;- Service Spotlight (1 serviciu)&#xa;- Case Study (rezultate client)&#xa;- Quick Tip (sfat rapid)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="template-select">
-          <mxGeometry y="35" width="280" height="85" as="geometry" />
+        <mxCell id="step3-strategy" value="AI GENEREAZA STRATEGIA:&#xa;──────────────────────────────&#xa;&#xa;DISTRIBUTIE CONTINUT (20 posts/luna):&#xa;&#xa;ATTRACT (20%) - 4 posts&#xa;  Hook, opreste scroll, curiozitate&#xa;&#xa;EDUCATE (30%) - 6 posts&#xa;  Tips, how-to, valoare gratuita&#xa;&#xa;ENGAGE (20%) - 4 posts&#xa;  Intrebari, polls, behind scenes&#xa;&#xa;CONVERT (20%) - 4 posts&#xa;  CTA, oferta, testimoniale&#xa;&#xa;RETAIN (10%) - 2 posts&#xa;  Thank you, community, loyalty" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="step3-box">
+          <mxGeometry y="30" width="360" height="200" as="geometry" />
         </mxCell>
         
-        <mxCell id="template-script" value="AI GENEREAZA SCRIPT (Claude)&#xa;- Bazat pe brand voice&#xa;- Adaptat pentru video (scurt)&#xa;- Review + Edit in dashboard" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="template-select">
-          <mxGeometry y="120" width="280" height="70" as="geometry" />
+        <mxCell id="step3-calendar" value="CALENDAR PREVIEW:&#xa;──────────────────────────────&#xa;Week 1:&#xa;  Luni    - EDUCATE - &quot;5 greseli PPC...&quot;&#xa;  Marti   - ATTRACT - &quot;Stiai ca 80%...&quot;&#xa;  Joi     - ENGAGE  - &quot;Ce platforma...&quot;&#xa;  Vineri  - EDUCATE - &quot;Cum masori ROI&quot;&#xa;&#xa;Week 2:&#xa;  Luni    - CONVERT - &quot;Oferta speciala&quot;&#xa;  Miercuri- EDUCATE - &quot;3 tools free...&quot;&#xa;  ...&#xa;&#xa;[View Full Calendar]  [Edit Distribution]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=10;fontFamily=Courier New;" vertex="1" parent="step3-box">
+          <mxGeometry y="230" width="360" height="170" as="geometry" />
         </mxCell>
         
-        <mxCell id="template-scenes" value="SCENE EDITOR&#xa;Scene 1: [Hook] + [Asset]&#xa;Scene 2: [Problema] + [Asset]&#xa;Scene 3: [Solutia] + [Asset]&#xa;Scene 4: [CTA] + [Logo]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=11;fontFamily=Courier New;" vertex="1" parent="template-select">
-          <mxGeometry y="190" width="280" height="90" as="geometry" />
+        <mxCell id="step3-user" value="USER ACTION:&#xa;──────────────────────────────&#xa;○ Approve all scripts&#xa;○ Edit individual scripts (click to expand)&#xa;○ Regenerate script (AI retry)&#xa;○ Change distribution %&#xa;○ Move posts between days&#xa;○ Add/remove posts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="step3-box">
+          <mxGeometry y="400" width="360" height="90" as="geometry" />
         </mxCell>
         
-        <mxCell id="template-avatar" value="AVATAR SELECT&#xa;- 3-5 avatare preset (HeyGen)&#xa;- Voice RO/EN" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="template-select">
-          <mxGeometry y="280" width="280" height="60" as="geometry" />
+        <mxCell id="step3-btn" value="[Approve Content Plan]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;fontStyle=1;fontSize=11;" vertex="1" parent="step3-box">
+          <mxGeometry y="490" width="360" height="30" as="geometry" />
         </mxCell>
         
-        <mxCell id="arrow3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#b85450;" edge="1" parent="1" source="template-select" target="render-box">
+        <!-- Arrow 3→4 -->
+        <mxCell id="arrow3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#b85450;" edge="1" parent="1" source="step3-box" target="step4-box">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         
-        <mxCell id="step4-title" value="STEP 4" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="1060" y="120" width="60" height="25" as="geometry" />
+        <!-- ==================== STEP 4: AVATAR SELECTION ==================== -->
+        
+        <mxCell id="step4-num" value="4" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;fontStyle=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="130" width="40" height="40" as="geometry" />
         </mxCell>
         
-        <mxCell id="render-box" value="VIDEO PIPELINE (n8n)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=35;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="1060" y="150" width="280" height="250" as="geometry" />
+        <mxCell id="step4-box" value="AVATAR SELECTION" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="180" width="320" height="380" as="geometry" />
         </mxCell>
         
-        <mxCell id="render-n8n" value="n8n ORCHESTRATION&#xa;- Trigger din BRAIN APP&#xa;- Coordoneaza toate API-urile&#xa;- Error handling + retry" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF6D00;strokeColor=#E65100;fontColor=#ffffff;align=left;spacingLeft=10;fontSize=12;fontStyle=1;" vertex="1" parent="render-box">
-          <mxGeometry y="35" width="280" height="70" as="geometry" />
+        <mxCell id="step4-ai" value="AI RECOMANDA:&#xa;─────────────────────────&#xa;&#xa;Pentru brand-ul tau (Professional,&#xa;Marketing Agency, Romanian):&#xa;&#xa;AVATAR: Masha&#xa;  - Stil: Professional, corporate&#xa;  - Varsta: 30-35&#xa;  - Look: Business casual&#xa;&#xa;VOICE: Romanian Female&#xa;  - Accent: Neutral&#xa;  - Speed: Normal&#xa;  - Tone: Warm, confident" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=10;fontStyle=1;" vertex="1" parent="step4-box">
+          <mxGeometry y="30" width="320" height="170" as="geometry" />
         </mxCell>
         
-        <mxCell id="render-heygen" value="1. HeyGen API&#xa;   - Genereaza avatar video&#xa;   - Lip-sync cu script" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="render-box">
-          <mxGeometry y="105" width="280" height="55" as="geometry" />
+        <mxCell id="step4-options" value="ALTE OPTIUNI:&#xa;─────────────────────────&#xa;○ Alex - Young, energetic (startups)&#xa;○ Maria - Friendly, casual (B2C)&#xa;○ Andrei - Serious, expert (finance)&#xa;○ Elena - Creative, dynamic (agencies)&#xa;&#xa;[Preview Each] [Hear Voice Sample]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="step4-box">
+          <mxGeometry y="200" width="320" height="100" as="geometry" />
         </mxCell>
         
-        <mxCell id="render-submagic" value="2. Submagic API&#xa;   - Adauga captions/subtitles&#xa;   - Efecte vizuale (zoom, emojis)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="render-box">
-          <mxGeometry y="160" width="280" height="55" as="geometry" />
+        <mxCell id="step4-user" value="USER ACTION:&#xa;─────────────────────────&#xa;○ Accept recommendation&#xa;○ Choose different avatar&#xa;○ Preview with sample script" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="step4-box">
+          <mxGeometry y="300" width="320" height="50" as="geometry" />
         </mxCell>
         
-        <mxCell id="render-output" value="OUTPUT: MP4 (9:16 vertical)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;fontSize=12;fontStyle=1;" vertex="1" parent="render-box">
-          <mxGeometry y="215" width="280" height="35" as="geometry" />
+        <mxCell id="step4-btn" value="[Confirm Avatar]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;fontStyle=1;fontSize=11;" vertex="1" parent="step4-box">
+          <mxGeometry y="350" width="320" height="30" as="geometry" />
         </mxCell>
         
-        <mxCell id="arrow4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#9673a6;" edge="1" parent="1" source="render-box" target="publish-box">
+        <!-- Arrow 4→5 -->
+        <mxCell id="arrow4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#9673a6;" edge="1" parent="1" source="step4-box" target="step5-box">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         
-        <mxCell id="step5-title" value="STEP 5" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="1400" y="120" width="60" height="25" as="geometry" />
+        <!-- ==================== STEP 5: VIDEO GENERATION ==================== -->
+        
+        <mxCell id="step5-num" value="5" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;fontStyle=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="130" width="40" height="40" as="geometry" />
         </mxCell>
         
-        <mxCell id="publish-box" value="PUBLISH" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=35;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="1400" y="150" width="280" height="250" as="geometry" />
+        <mxCell id="step5-box" value="VIDEO GENERATION" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#FF6D00;strokeColor=#E65100;rounded=1;fontSize=14;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="180" width="340" height="420" as="geometry" />
         </mxCell>
         
-        <mxCell id="publish-preview" value="PREVIEW&#xa;- Vezi video final&#xa;- Edit caption/hashtags&#xa;- Approve sau regenerate" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="publish-box">
-          <mxGeometry y="35" width="280" height="65" as="geometry" />
+        <mxCell id="step5-mode" value="ALEGE MOD GENERARE:&#xa;──────────────────────────────&#xa;&#xa;○ TURBO MODE&#xa;   Genereaza toate 20 video-uri&#xa;   Primesti notificare cand gata&#xa;   Timp: ~30 min&#xa;&#xa;○ CONTROL MODE&#xa;   Genereaza unul cate unul&#xa;   Review fiecare video&#xa;   Approve / Regenerate / Edit" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=10;fontColor=#1a1a2e;" vertex="1" parent="step5-box">
+          <mxGeometry y="30" width="340" height="140" as="geometry" />
         </mxCell>
         
-        <mxCell id="publish-options" value="OPTIUNI MVP&#xa;- Download MP4&#xa;- Schedule via Late API&#xa;- Post direct to social" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="publish-box">
-          <mxGeometry y="100" width="280" height="70" as="geometry" />
+        <mxCell id="step5-pipeline" value="PIPELINE (n8n):&#xa;──────────────────────────────&#xa;1. Script + Assets → HeyGen API&#xa;   (avatar video generation)&#xa;&#xa;2. HeyGen output → Submagic API&#xa;   (captions, effects, zoom)&#xa;&#xa;3. Final MP4 → Supabase Storage&#xa;   (ready for preview)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=10;fontColor=#1a1a2e;" vertex="1" parent="step5-box">
+          <mxGeometry y="170" width="340" height="120" as="geometry" />
         </mxCell>
         
-        <mxCell id="publish-late" value="LATE API - Auto Posting&#xa;- Instagram Reels&#xa;- TikTok&#xa;- Facebook, LinkedIn" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0066FF;strokeColor=#0044AA;fontColor=#ffffff;align=left;spacingLeft=10;fontSize=12;fontStyle=1;" vertex="1" parent="publish-box">
-          <mxGeometry y="170" width="280" height="50" as="geometry" />
+        <mxCell id="step5-review" value="VIDEO REVIEW:&#xa;──────────────────────────────&#xa;[Approve] - OK, next video&#xa;[Regenerate] - Try again (same script)&#xa;[Edit Script] - Modify then regenerate&#xa;[Skip] - Don't use this one&#xa;&#xa;□ Approve ALL remaining (trust mode)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=10;fontColor=#1a1a2e;" vertex="1" parent="step5-box">
+          <mxGeometry y="290" width="340" height="100" as="geometry" />
         </mxCell>
         
-        <mxCell id="publish-credits" value="-1 CREDIT USED" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=center;fontSize=12;fontStyle=1;" vertex="1" parent="publish-box">
-          <mxGeometry y="220" width="280" height="30" as="geometry" />
+        <mxCell id="step5-btn" value="[Start Generation]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;fontStyle=1;fontSize=11;" vertex="1" parent="step5-box">
+          <mxGeometry y="390" width="340" height="30" as="geometry" />
         </mxCell>
         
-        <mxCell id="tech-line" value="" style="line;strokeWidth=2;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="40" y="520" width="1640" height="10" as="geometry" />
+        <!-- Arrow 5→6 -->
+        <mxCell id="arrow5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#E65100;" edge="1" parent="1" source="step5-box" target="step6-box">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         
-        <mxCell id="tech-title" value="TECH STACK" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
-          <mxGeometry x="40" y="540" width="150" height="30" as="geometry" />
+        <!-- ==================== STEP 6: SCHEDULING ==================== -->
+        
+        <mxCell id="step6-num" value="6" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;fontStyle=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="2000" y="130" width="40" height="40" as="geometry" />
         </mxCell>
         
-        <mxCell id="tech-frontend" value="Frontend&#xa;Next.js 14&#xa;React + TailwindCSS&#xa;shadcn/ui" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
-          <mxGeometry x="40" y="580" width="120" height="80" as="geometry" />
+        <mxCell id="step6-box" value="SCHEDULING + POSTING" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#0066FF;strokeColor=#0044AA;rounded=1;fontSize=14;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="2000" y="180" width="320" height="380" as="geometry" />
         </mxCell>
         
-        <mxCell id="tech-backend" value="Backend&#xa;Supabase&#xa;PostgreSQL&#xa;Edge Functions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
-          <mxGeometry x="170" y="580" width="120" height="80" as="geometry" />
+        <mxCell id="step6-platforms" value="PLATFORME:&#xa;─────────────────────────&#xa;☑ Instagram Reels&#xa;☑ TikTok&#xa;☑ Facebook Reels&#xa;☐ LinkedIn (optional)&#xa;☐ YouTube Shorts (optional)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=10;fontColor=#1a1a2e;" vertex="1" parent="step6-box">
+          <mxGeometry y="30" width="320" height="100" as="geometry" />
         </mxCell>
         
-        <mxCell id="tech-n8n" value="Orchestration&#xa;n8n&#xa;(workflow engine)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF6D00;strokeColor=#E65100;fontColor=#ffffff;align=center;fontSize=11;verticalAlign=top;spacingTop=5;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="300" y="580" width="120" height="80" as="geometry" />
+        <mxCell id="step6-schedule" value="SCHEDULE:&#xa;─────────────────────────&#xa;AI RECOMANDA ore optime:&#xa;- Instagram: 10:00, 18:00&#xa;- TikTok: 12:00, 20:00&#xa;- Facebook: 09:00, 17:00&#xa;&#xa;○ Accept recommended times&#xa;○ Custom schedule" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=10;fontColor=#1a1a2e;" vertex="1" parent="step6-box">
+          <mxGeometry y="130" width="320" height="110" as="geometry" />
         </mxCell>
         
-        <mxCell id="tech-ai" value="AI Text&#xa;Claude API&#xa;(script gen)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
-          <mxGeometry x="430" y="580" width="100" height="80" as="geometry" />
+        <mxCell id="step6-late" value="LATE API (Auto-posting):&#xa;─────────────────────────&#xa;- Conecteaza conturile social&#xa;- Posteaza automat la ora setata&#xa;- Caption + Hashtags incluse&#xa;- Notificare dupa postare" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=10;fontColor=#1a1a2e;fontStyle=1;" vertex="1" parent="step6-box">
+          <mxGeometry y="240" width="320" height="80" as="geometry" />
         </mxCell>
         
-        <mxCell id="tech-heygen" value="Video Avatar&#xa;HeyGen API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=center;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
-          <mxGeometry x="540" y="580" width="100" height="80" as="geometry" />
+        <mxCell id="step6-options" value="OPTIUNI:&#xa;─────────────────────────&#xa;○ Schedule all (calendar complet)&#xa;○ Download MP4 (manual posting)&#xa;○ Post now (imediat)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;fontSize=10;fontColor=#1a1a2e;" vertex="1" parent="step6-box">
+          <mxGeometry y="320" width="320" height="60" as="geometry" />
         </mxCell>
         
-        <mxCell id="tech-submagic" value="Captions&#xa;Submagic API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
-          <mxGeometry x="650" y="580" width="100" height="80" as="geometry" />
+        <!-- ==================== BOTTOM ROW: TECH + INFO ==================== -->
+        
+        <mxCell id="separator" value="" style="line;strokeWidth=2;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="740" width="2280" height="10" as="geometry" />
         </mxCell>
         
-        <mxCell id="tech-late" value="Social Post&#xa;Late API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0066FF;strokeColor=#0044AA;fontColor=#ffffff;align=center;fontSize=11;verticalAlign=top;spacingTop=5;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="760" y="580" width="100" height="80" as="geometry" />
+        <!-- TECH STACK -->
+        <mxCell id="tech-title" value="TECH STACK" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="40" y="760" width="120" height="25" as="geometry" />
         </mxCell>
         
-        <mxCell id="tech-deploy" value="Deploy&#xa;Vercel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;align=center;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
-          <mxGeometry x="870" y="580" width="80" height="80" as="geometry" />
+        <mxCell id="tech1" value="Frontend&#xa;Next.js 14&#xa;React&#xa;TailwindCSS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;fontSize=10;verticalAlign=top;spacingTop=3;" vertex="1" parent="1">
+          <mxGeometry x="40" y="790" width="90" height="70" as="geometry" />
         </mxCell>
         
-        <mxCell id="mvp-box" value="MVP SCOPE" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="1000" y="540" width="220" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="mvp-1" value="[x] Brand setup (services)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="mvp-box">
-          <mxGeometry y="30" width="220" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="mvp-2" value="[x] Asset library + AI tagging" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="mvp-box">
-          <mxGeometry y="55" width="220" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="mvp-3" value="[x] HeyGen + Submagic via n8n" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="mvp-box">
-          <mxGeometry y="80" width="220" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="mvp-4" value="[x] Late API posting" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="mvp-box">
-          <mxGeometry y="105" width="220" height="25" as="geometry" />
+        <mxCell id="tech2" value="Backend&#xa;Supabase&#xa;PostgreSQL" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;fontSize=10;verticalAlign=top;spacingTop=3;" vertex="1" parent="1">
+          <mxGeometry x="140" y="790" width="90" height="70" as="geometry" />
         </mxCell>
         
-        <mxCell id="later-box" value="LATER" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f5f5f5;strokeColor=#666666;rounded=1;fontSize=14;strokeDashArray=8 8;" vertex="1" parent="1">
-          <mxGeometry x="1240" y="540" width="200" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="later-1" value="[ ] Produse (e-commerce)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="later-box">
-          <mxGeometry y="30" width="200" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="later-2" value="[ ] Analytics dashboard" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="later-box">
-          <mxGeometry y="55" width="200" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="later-3" value="[ ] AI suggestions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="later-box">
-          <mxGeometry y="80" width="200" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="later-4" value="[ ] White-label" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="later-box">
-          <mxGeometry y="105" width="200" height="25" as="geometry" />
+        <mxCell id="tech3" value="Orchestration&#xa;n8n" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF6D00;strokeColor=#E65100;fontColor=#ffffff;align=center;fontSize=10;verticalAlign=top;spacingTop=3;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="790" width="90" height="70" as="geometry" />
         </mxCell>
         
-        <mxCell id="pricing-title" value="PRICING" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
-          <mxGeometry x="1480" y="540" width="100" height="30" as="geometry" />
+        <mxCell id="tech4" value="AI Text&#xa;Claude API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;fontSize=10;verticalAlign=top;spacingTop=3;" vertex="1" parent="1">
+          <mxGeometry x="340" y="790" width="90" height="70" as="geometry" />
         </mxCell>
         
-        <mxCell id="price-starter" value="STARTER&#xa;29 EUR/mo&#xa;5 videos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;fontSize=11;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="1480" y="580" width="80" height="70" as="geometry" />
+        <mxCell id="tech5" value="Video&#xa;HeyGen API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=center;fontSize=10;verticalAlign=top;spacingTop=3;" vertex="1" parent="1">
+          <mxGeometry x="440" y="790" width="90" height="70" as="geometry" />
         </mxCell>
         
-        <mxCell id="price-pro" value="PRO&#xa;79 EUR/mo&#xa;20 videos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;fontSize=11;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="1570" y="580" width="80" height="70" as="geometry" />
+        <mxCell id="tech6" value="Captions&#xa;Submagic" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;fontSize=10;verticalAlign=top;spacingTop=3;" vertex="1" parent="1">
+          <mxGeometry x="540" y="790" width="90" height="70" as="geometry" />
         </mxCell>
         
-        <mxCell id="price-agency" value="AGENCY&#xa;199 EUR/mo&#xa;60 videos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;fontSize=11;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="1660" y="580" width="80" height="70" as="geometry" />
+        <mxCell id="tech7" value="Posting&#xa;Late API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0066FF;strokeColor=#0044AA;fontColor=#ffffff;align=center;fontSize=10;verticalAlign=top;spacingTop=3;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="790" width="90" height="70" as="geometry" />
         </mxCell>
         
-        <mxCell id="footer" value="Updated: 2025-12-14 | BRAIN APP MVP | HeyGen + Submagic + n8n + Late API" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="600" y="690" width="500" height="25" as="geometry" />
+        <!-- SUMMARY -->
+        <mxCell id="summary-box" value="FLOW SUMMARY" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=25;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f5f5f5;strokeColor=#666666;rounded=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="800" y="760" width="500" height="130" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="summary-text" value="1. User pune URL → AI scaneaza brand + assets&#xa;2. User verifica/modifica (sau approve all)&#xa;3. AI genereaza Content Plan 1 luna (20 scripturi)&#xa;4. User approve plan (edit daca vrea)&#xa;5. AI recomanda Avatar → User confirma&#xa;6. Video generation: TURBO (all) sau CONTROL (one by one)&#xa;7. Late API posteaza automat conform calendar" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="summary-box">
+          <mxGeometry y="25" width="500" height="105" as="geometry" />
+        </mxCell>
+        
+        <!-- PRICING -->
+        <mxCell id="pricing-title" value="PRICING" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="1380" y="760" width="80" height="25" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="price1" value="STARTER&#xa;29 EUR/mo&#xa;5 videos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1380" y="790" width="80" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="price2" value="PRO&#xa;79 EUR/mo&#xa;20 videos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1470" y="790" width="80" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="price3" value="AGENCY&#xa;199 EUR/mo&#xa;60 videos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1560" y="790" width="80" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- TIME ESTIMATE -->
+        <mxCell id="time-box" value="TIME ESTIMATE (per month)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=25;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1700" y="760" width="280" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="time-text" value="Setup initial (one-time): 10-15 min&#xa;Content plan review: 5-10 min&#xa;Video generation (20 videos): ~30 min (auto)&#xa;Total user time: ~20-30 min/month" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="time-box">
+          <mxGeometry y="25" width="280" height="75" as="geometry" />
+        </mxCell>
+        
+        <!-- FOOTER -->
+        <mxCell id="footer" value="BRAIN APP | AI recomanda - User decide | HeyGen + Submagic + n8n + Late API | Updated: 2025-12-14" style="text;html=1;strokeColor=none;fillColor=#1a1a2e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=11;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="800" y="900" width="800" height="25" as="geometry" />
         </mxCell>
         
       </root>

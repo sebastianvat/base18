@@ -169,18 +169,69 @@
           <mxGeometry x="2240" y="540" width="170" height="140" as="geometry" />
         </mxCell>
         
-        <!-- ==================== LEGEND ==================== -->
-        <mxCell id="legend-box" value="LEGEND" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=25;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f5f5f5;strokeColor=#666666;rounded=1;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="40" y="700" width="340" height="130" as="geometry" />
+        <!-- ==================== ONBOARDING ==================== -->
+        <mxCell id="onboard-section" value="ONBOARDING" style="text;html=1;strokeColor=none;fillColor=#82b366;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="40" y="700" width="120" height="30" as="geometry" />
         </mxCell>
         
-        <mxCell id="legend-items" value="[Blue] - Navigation/Lists&#xa;[Green] - AI Scan/Results&#xa;[Yellow] - User Input/Edit&#xa;[Orange] - Video Generation&#xa;[Purple] - Avatar&#xa;[Dark Blue] - Scheduling&#xa;[Grey Dashed] - Coming Soon" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="legend-box">
+        <mxCell id="page-onboard1" value="ONBOARDING 1/3&#xa;─────────────────────&#xa;Welcome to BRAIN!&#xa;&#xa;AI-powered video&#xa;content for your brand&#xa;&#xa;[illustration]&#xa;&#xa;─────────────────────&#xa;[Skip] [Next]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="40" y="740" width="150" height="160" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="page-onboard2" value="ONBOARDING 2/3&#xa;─────────────────────&#xa;Add your brand&#xa;&#xa;Just paste your&#xa;website URL and AI&#xa;does the rest!&#xa;&#xa;[URL input field]&#xa;─────────────────────&#xa;[Back] [Scan Website]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="210" y="740" width="150" height="160" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="page-onboard3" value="ONBOARDING 3/3&#xa;─────────────────────&#xa;You are ready!&#xa;&#xa;Quick tour:&#xa;1. Review brand info&#xa;2. Upload assets&#xa;3. Generate content&#xa;4. Get videos!&#xa;&#xa;─────────────────────&#xa;[Start Tour] [Skip]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="380" y="740" width="150" height="160" as="geometry" />
+        </mxCell>
+        
+        <!-- ==================== PRICING ==================== -->
+        <mxCell id="pricing-section" value="PRICING" style="text;html=1;strokeColor=none;fillColor=#82b366;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="600" y="700" width="80" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="page-pricing" value="PRICING PAGE&#xa;─────────────────────&#xa;CURRENT: PRO (15/20 credits)&#xa;&#xa;┌────────┬────────┬────────┐&#xa;│STARTER │  PRO   │ AGENCY │&#xa;│ 29 EUR │ 79 EUR │199 EUR │&#xa;│5 videos│20 video│60 video│&#xa;│        │        │        │&#xa;│[Select]│CURRENT │[Select]│&#xa;└────────┴────────┴────────┘&#xa;&#xa;NEED MORE?&#xa;Buy credits: 5 EUR/video&#xa;[Buy 10] [Buy 20] [Buy 50]&#xa;&#xa;─────────────────────&#xa;Billing history below" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=9;verticalAlign=top;spacingTop=5;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="740" width="180" height="250" as="geometry" />
+        </mxCell>
+        
+        <!-- ==================== MODALS / STATES ==================== -->
+        <mxCell id="modals-section" value="MODALS / STATES" style="text;html=1;strokeColor=none;fillColor=#b85450;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="850" y="700" width="140" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="modal-empty" value="EMPTY STATE&#xa;─────────────────────&#xa;(shown when no data)&#xa;&#xa;[illustration]&#xa;&#xa;No brands yet!&#xa;Add your first brand&#xa;to get started.&#xa;&#xa;[+ Add Brand]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="850" y="740" width="150" height="160" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="modal-credits-low" value="CREDITS LOW (Banner)&#xa;─────────────────────&#xa;(shown at 2 credits)&#xa;&#xa;[!] Only 2 credits left!&#xa;&#xa;[Buy More] [Dismiss]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="740" width="150" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="modal-credits-out" value="NO CREDITS (Modal)&#xa;─────────────────────&#xa;(blocks generation)&#xa;&#xa;You have 0 credits!&#xa;&#xa;Buy more to continue&#xa;generating videos.&#xa;&#xa;[Buy Credits]&#xa;[Upgrade Plan]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="860" width="150" height="150" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="modal-error" value="ERROR STATE&#xa;─────────────────────&#xa;(when something fails)&#xa;&#xa;[!] Video generation&#xa;failed&#xa;&#xa;Dont worry, you didnt&#xa;lose a credit.&#xa;&#xa;[Retry] [Contact Support]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="740" width="150" height="160" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="modal-success" value="SUCCESS STATE&#xa;─────────────────────&#xa;(after completion)&#xa;&#xa;[checkmark]&#xa;&#xa;All 18 videos&#xa;generated!&#xa;&#xa;[View Videos]&#xa;[Schedule All]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="920" width="150" height="150" as="geometry" />
+        </mxCell>
+        
+        <!-- ==================== LEGEND ==================== -->
+        <mxCell id="legend-box" value="LEGEND" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=25;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f5f5f5;strokeColor=#666666;rounded=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1000" width="340" height="130" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-items" value="[Blue] - Navigation/Lists&#xa;[Green] - AI Scan/Results/Success&#xa;[Yellow] - User Input/Edit/Warning&#xa;[Orange] - Video Generation&#xa;[Red] - Errors/Blocks&#xa;[Dark Blue] - Scheduling&#xa;[Grey Dashed] - Coming Soon" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="legend-box">
           <mxGeometry y="25" width="340" height="105" as="geometry" />
         </mxCell>
         
         <!-- ==================== PAGE COUNT ==================== -->
-        <mxCell id="count-box" value="TOTAL: 22 SCREENS&#xa;─────────────────────&#xa;Auth: 3 | Dashboard: 1 | Brand: 4&#xa;Assets: 3 | Content: 3 | Avatar: 2&#xa;Video Gen: 3 | Schedule: 2&#xa;Videos: 2 | Settings: 1 | Analytics: 1 (soon)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="40" y="850" width="340" height="100" as="geometry" />
+        <mxCell id="count-box" value="TOTAL: 30 SCREENS&#xa;─────────────────────&#xa;Auth: 3 | Onboarding: 3 | Dashboard: 1&#xa;Brand: 4 | Assets: 3 | Content: 3&#xa;Avatar: 2 | Video Gen: 3 | Schedule: 2&#xa;Videos: 2 | Settings: 1 | Pricing: 1&#xa;Modals: 5 | Analytics: 1 (soon)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1150" width="340" height="120" as="geometry" />
         </mxCell>
         
       </root>

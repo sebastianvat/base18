@@ -83,8 +83,16 @@
           <mxGeometry x="860" y="80" width="130" height="30" as="geometry" />
         </mxCell>
         
-        <mxCell id="page-content-setup" value="CONTENT SETUP&#xa;─────────────────────&#xa;CONTENT TYPE:&#xa;[VIDEO] active&#xa;[STATIC] coming soon&#xa;&#xa;FREQUENCY:&#xa;○ 10/mo ○ 20/mo&#xa;○ 30/mo ○ 50/mo ○ Custom&#xa;&#xa;DISTRIBUTION:&#xa;ATTRACT [20%] slider&#xa;EDUCATE [30%] slider&#xa;ENGAGE  [20%] slider&#xa;CONVERT [20%] slider&#xa;RETAIN  [10%] slider&#xa;&#xa;─────────────────────&#xa;[Generate Content Plan]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="860" y="120" width="180" height="290" as="geometry" />
+        <mxCell id="page-content-setup" value="CONTENT SETUP&#xa;─────────────────────&#xa;CONTENT TYPE:&#xa;[VIDEO] active&#xa;[STATIC] coming soon&#xa;&#xa;FREQUENCY:&#xa;○ 10/mo ○ 20/mo&#xa;○ 30/mo ○ 50/mo ○ Custom&#xa;&#xa;─────────────────────&#xa;[Next: Choose Topics]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="120" width="180" height="170" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="page-topics" value="TOPICS / DIRECTION&#xa;─────────────────────&#xa;AI SUGGESTS (based on brand):&#xa;[x] Behind the scenes&#xa;[x] Client success stories&#xa;[x] Product/Service features&#xa;[ ] Industry tips &amp; trends&#xa;[ ] Team culture&#xa;[ ] How-to tutorials&#xa;[x] Promotions/Offers&#xa;[ ] FAQ answers&#xa;&#xa;+ Add custom topic...&#xa;&#xa;─────────────────────&#xa;EXCLUDE (never mention):&#xa;[ ] Competitors&#xa;[ ] Prices&#xa;[ ] Politics&#xa;+ Add exclusion...&#xa;&#xa;─────────────────────&#xa;[Back] [Next: Distribution]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="310" width="180" height="340" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="page-distribution" value="DISTRIBUTION&#xa;─────────────────────&#xa;How to split 20 posts?&#xa;&#xa;ATTRACT [20%] = 4 posts&#xa;[--------====]&#xa;hook, curiosity&#xa;&#xa;EDUCATE [30%] = 6 posts&#xa;[--------======]&#xa;value, learn&#xa;&#xa;ENGAGE  [20%] = 4 posts&#xa;[--------====]&#xa;questions, polls&#xa;&#xa;CONVERT [20%] = 4 posts&#xa;[--------====]&#xa;CTA, offers&#xa;&#xa;RETAIN  [10%] = 2 posts&#xa;[--------==]&#xa;loyalty, thanks&#xa;&#xa;─────────────────────&#xa;[Back] [Generate Calendar]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="670" width="180" height="370" as="geometry" />
         </mxCell>
         
         <mxCell id="page-calendar" value="CONTENT CALENDAR&#xa;─────────────────────&#xa;VIEW: Calendar | List&#xa;&#xa;CALENDAR GRID:&#xa;Mo Tu We Th Fr Sa Su&#xa;[E][A][ ][E][C][ ][ ]&#xa;[E][ ][A][ ][E][ ][ ]&#xa;...&#xa;&#xa;COLOR CODED:&#xa;Blue=Educate&#xa;Green=Attract&#xa;Orange=Engage&#xa;Red=Convert&#xa;Purple=Retain&#xa;&#xa;Click day = see post&#xa;Drag to reschedule&#xa;─────────────────────&#xa;[Approve All]&#xa;[Regenerate All]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=10;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
@@ -230,7 +238,7 @@
         </mxCell>
         
         <!-- ==================== PAGE COUNT ==================== -->
-        <mxCell id="count-box" value="TOTAL: 30 SCREENS&#xa;─────────────────────&#xa;Auth: 3 | Onboarding: 3 | Dashboard: 1&#xa;Brand: 4 | Assets: 3 | Content: 3&#xa;Avatar: 2 | Video Gen: 3 | Schedule: 2&#xa;Videos: 2 | Settings: 1 | Pricing: 1&#xa;Modals: 5 | Analytics: 1 (soon)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="count-box" value="TOTAL: 32 SCREENS&#xa;─────────────────────&#xa;Auth: 3 | Onboarding: 3 | Dashboard: 1&#xa;Brand: 4 | Assets: 3 | Content: 5&#xa;Avatar: 2 | Video Gen: 3 | Schedule: 2&#xa;Videos: 2 | Settings: 1 | Pricing: 1&#xa;Modals: 5 | Analytics: 1 (soon)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;align=left;spacingLeft=10;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="40" y="1150" width="340" height="120" as="geometry" />
         </mxCell>
         

@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2025-12-14T16:30:00.000Z" agent="TBS" version="22.1.0">
+<mxfile host="app.diagrams.net" modified="2025-12-14T17:00:00.000Z" agent="TBS" version="22.1.0">
   <diagram id="brain-app-flow" name="BRAIN APP - Services Flow">
     <mxGraphModel dx="1800" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
       <root>
@@ -77,7 +77,7 @@
           <mxGeometry y="35" width="280" height="85" as="geometry" />
         </mxCell>
         
-        <mxCell id="template-script" value="AI GENEREAZA SCRIPT&#xa;- Claude AI scrie textul&#xa;- Bazat pe brand voice&#xa;- Adaptat pentru video (scurt)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="template-select">
+        <mxCell id="template-script" value="AI GENEREAZA SCRIPT (Claude)&#xa;- Bazat pe brand voice&#xa;- Adaptat pentru video (scurt)&#xa;- Review + Edit in dashboard" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="template-select">
           <mxGeometry y="120" width="280" height="70" as="geometry" />
         </mxCell>
         
@@ -97,20 +97,24 @@
           <mxGeometry x="1060" y="120" width="60" height="25" as="geometry" />
         </mxCell>
         
-        <mxCell id="render-box" value="RENDER VIDEO" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=35;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="1060" y="150" width="280" height="200" as="geometry" />
+        <mxCell id="render-box" value="VIDEO PIPELINE (n8n)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=35;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="150" width="280" height="250" as="geometry" />
         </mxCell>
         
-        <mxCell id="render-heygen" value="HeyGen API&#xa;- Genereaza avatar video&#xa;- Lip-sync cu script&#xa;- ~60 sec procesare" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=10;fontSize=12;fontStyle=1;" vertex="1" parent="render-box">
+        <mxCell id="render-n8n" value="n8n ORCHESTRATION&#xa;- Trigger din BRAIN APP&#xa;- Coordoneaza toate API-urile&#xa;- Error handling + retry" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FF6D00;strokeColor=#E65100;fontColor=#ffffff;align=left;spacingLeft=10;fontSize=12;fontStyle=1;" vertex="1" parent="render-box">
           <mxGeometry y="35" width="280" height="70" as="geometry" />
         </mxCell>
         
-        <mxCell id="render-remotion" value="Remotion Compose&#xa;- Combina avatar + assets&#xa;- Adauga text/captions&#xa;- Tranzitii smooth" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="render-box">
-          <mxGeometry y="105" width="280" height="65" as="geometry" />
+        <mxCell id="render-heygen" value="1. HeyGen API&#xa;   - Genereaza avatar video&#xa;   - Lip-sync cu script" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="render-box">
+          <mxGeometry y="105" width="280" height="55" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="render-submagic" value="2. Submagic API&#xa;   - Adauga captions/subtitles&#xa;   - Efecte vizuale (zoom, emojis)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="render-box">
+          <mxGeometry y="160" width="280" height="55" as="geometry" />
         </mxCell>
         
         <mxCell id="render-output" value="OUTPUT: MP4 (9:16 vertical)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;fontSize=12;fontStyle=1;" vertex="1" parent="render-box">
-          <mxGeometry y="170" width="280" height="30" as="geometry" />
+          <mxGeometry y="215" width="280" height="35" as="geometry" />
         </mxCell>
         
         <mxCell id="arrow4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;strokeColor=#9673a6;" edge="1" parent="1" source="render-box" target="publish-box">
@@ -122,107 +126,115 @@
         </mxCell>
         
         <mxCell id="publish-box" value="PUBLISH" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=35;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="1400" y="150" width="280" height="200" as="geometry" />
+          <mxGeometry x="1400" y="150" width="280" height="250" as="geometry" />
         </mxCell>
         
         <mxCell id="publish-preview" value="PREVIEW&#xa;- Vezi video final&#xa;- Edit caption/hashtags&#xa;- Approve sau regenerate" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="publish-box">
           <mxGeometry y="35" width="280" height="65" as="geometry" />
         </mxCell>
         
-        <mxCell id="publish-options" value="OPTIUNI&#xa;- Download MP4&#xa;- Schedule (Late API) - LATER&#xa;- Post Now - LATER" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="publish-box">
+        <mxCell id="publish-options" value="OPTIUNI MVP&#xa;- Download MP4&#xa;- Schedule via Late API&#xa;- Post direct to social" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;fontSize=12;" vertex="1" parent="publish-box">
           <mxGeometry y="100" width="280" height="70" as="geometry" />
         </mxCell>
         
-        <mxCell id="publish-credits" value="-1 CREDIT USED" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=center;fontSize=12;fontStyle=1;" vertex="1" parent="publish-box">
-          <mxGeometry y="170" width="280" height="30" as="geometry" />
+        <mxCell id="publish-late" value="LATE API - Auto Posting&#xa;- Instagram Reels&#xa;- TikTok&#xa;- Facebook, LinkedIn" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0066FF;strokeColor=#0044AA;fontColor=#ffffff;align=left;spacingLeft=10;fontSize=12;fontStyle=1;" vertex="1" parent="publish-box">
+          <mxGeometry y="170" width="280" height="50" as="geometry" />
         </mxCell>
         
-        <mxCell id="platforms-future" value="PLATFORME (LATER)&#xa;&#xa;Instagram Reels&#xa;TikTok&#xa;Facebook Reels&#xa;LinkedIn" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeDashArray=8 8;align=left;spacingLeft=15;fontSize=12;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
-          <mxGeometry x="1400" y="380" width="280" height="120" as="geometry" />
+        <mxCell id="publish-credits" value="-1 CREDIT USED" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=center;fontSize=12;fontStyle=1;" vertex="1" parent="publish-box">
+          <mxGeometry y="220" width="280" height="30" as="geometry" />
         </mxCell>
         
         <mxCell id="tech-line" value="" style="line;strokeWidth=2;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="40" y="550" width="1640" height="10" as="geometry" />
+          <mxGeometry x="40" y="520" width="1640" height="10" as="geometry" />
         </mxCell>
         
         <mxCell id="tech-title" value="TECH STACK" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
-          <mxGeometry x="40" y="570" width="150" height="30" as="geometry" />
+          <mxGeometry x="40" y="540" width="150" height="30" as="geometry" />
         </mxCell>
         
-        <mxCell id="tech-frontend" value="Frontend&#xa;Next.js 14 + React&#xa;TailwindCSS&#xa;shadcn/ui" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
-          <mxGeometry x="40" y="610" width="130" height="80" as="geometry" />
+        <mxCell id="tech-frontend" value="Frontend&#xa;Next.js 14&#xa;React + TailwindCSS&#xa;shadcn/ui" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="40" y="580" width="120" height="80" as="geometry" />
         </mxCell>
         
         <mxCell id="tech-backend" value="Backend&#xa;Supabase&#xa;PostgreSQL&#xa;Edge Functions" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
-          <mxGeometry x="190" y="610" width="130" height="80" as="geometry" />
+          <mxGeometry x="170" y="580" width="120" height="80" as="geometry" />
         </mxCell>
         
-        <mxCell id="tech-ai" value="AI&#xa;Claude API&#xa;(text generation)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
-          <mxGeometry x="340" y="610" width="130" height="80" as="geometry" />
+        <mxCell id="tech-n8n" value="Orchestration&#xa;n8n&#xa;(workflow engine)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF6D00;strokeColor=#E65100;fontColor=#ffffff;align=center;fontSize=11;verticalAlign=top;spacingTop=5;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="580" width="120" height="80" as="geometry" />
         </mxCell>
         
-        <mxCell id="tech-video" value="Video&#xa;HeyGen API&#xa;Remotion" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=center;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
-          <mxGeometry x="490" y="610" width="130" height="80" as="geometry" />
+        <mxCell id="tech-ai" value="AI Text&#xa;Claude API&#xa;(script gen)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="430" y="580" width="100" height="80" as="geometry" />
         </mxCell>
         
-        <mxCell id="tech-storage" value="Storage&#xa;Supabase Storage&#xa;(assets + videos)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=center;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
-          <mxGeometry x="640" y="610" width="130" height="80" as="geometry" />
+        <mxCell id="tech-heygen" value="Video Avatar&#xa;HeyGen API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=center;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="540" y="580" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="tech-submagic" value="Captions&#xa;Submagic API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
+          <mxGeometry x="650" y="580" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="tech-late" value="Social Post&#xa;Late API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0066FF;strokeColor=#0044AA;fontColor=#ffffff;align=center;fontSize=11;verticalAlign=top;spacingTop=5;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="580" width="100" height="80" as="geometry" />
         </mxCell>
         
         <mxCell id="tech-deploy" value="Deploy&#xa;Vercel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1a1a2e;strokeColor=#0d0d1a;fontColor=#ffffff;align=center;fontSize=11;verticalAlign=top;spacingTop=5;" vertex="1" parent="1">
-          <mxGeometry x="790" y="610" width="100" height="80" as="geometry" />
+          <mxGeometry x="870" y="580" width="80" height="80" as="geometry" />
         </mxCell>
         
         <mxCell id="mvp-box" value="MVP SCOPE" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="950" y="570" width="200" height="130" as="geometry" />
+          <mxGeometry x="1000" y="540" width="220" height="130" as="geometry" />
         </mxCell>
         <mxCell id="mvp-1" value="[x] Brand setup (services)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="mvp-box">
-          <mxGeometry y="30" width="200" height="25" as="geometry" />
+          <mxGeometry y="30" width="220" height="25" as="geometry" />
         </mxCell>
         <mxCell id="mvp-2" value="[x] Asset library + AI tagging" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="mvp-box">
-          <mxGeometry y="55" width="200" height="25" as="geometry" />
+          <mxGeometry y="55" width="220" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="mvp-3" value="[x] 4 video templates" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="mvp-box">
-          <mxGeometry y="80" width="200" height="25" as="geometry" />
+        <mxCell id="mvp-3" value="[x] HeyGen + Submagic via n8n" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="mvp-box">
+          <mxGeometry y="80" width="220" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="mvp-4" value="[x] Download MP4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="mvp-box">
-          <mxGeometry y="105" width="200" height="25" as="geometry" />
+        <mxCell id="mvp-4" value="[x] Late API posting" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="mvp-box">
+          <mxGeometry y="105" width="220" height="25" as="geometry" />
         </mxCell>
         
         <mxCell id="later-box" value="LATER" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#f5f5f5;strokeColor=#666666;rounded=1;fontSize=14;strokeDashArray=8 8;" vertex="1" parent="1">
-          <mxGeometry x="1170" y="570" width="200" height="130" as="geometry" />
+          <mxGeometry x="1240" y="540" width="200" height="130" as="geometry" />
         </mxCell>
         <mxCell id="later-1" value="[ ] Produse (e-commerce)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="later-box">
           <mxGeometry y="30" width="200" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="later-2" value="[ ] Auto-schedule (Late API)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="later-box">
+        <mxCell id="later-2" value="[ ] Analytics dashboard" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="later-box">
           <mxGeometry y="55" width="200" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="later-3" value="[ ] Direct post to social" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="later-box">
+        <mxCell id="later-3" value="[ ] AI suggestions" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="later-box">
           <mxGeometry y="80" width="200" height="25" as="geometry" />
         </mxCell>
-        <mxCell id="later-4" value="[ ] Analytics dashboard" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="later-box">
+        <mxCell id="later-4" value="[ ] White-label" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=left;spacingLeft=10;fontSize=11;" vertex="1" parent="later-box">
           <mxGeometry y="105" width="200" height="25" as="geometry" />
         </mxCell>
         
         <mxCell id="pricing-title" value="PRICING" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
-          <mxGeometry x="1420" y="570" width="100" height="30" as="geometry" />
+          <mxGeometry x="1480" y="540" width="100" height="30" as="geometry" />
         </mxCell>
         
         <mxCell id="price-starter" value="STARTER&#xa;29 EUR/mo&#xa;5 videos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=center;fontSize=11;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="1420" y="610" width="80" height="70" as="geometry" />
+          <mxGeometry x="1480" y="580" width="80" height="70" as="geometry" />
         </mxCell>
         
         <mxCell id="price-pro" value="PRO&#xa;79 EUR/mo&#xa;20 videos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;fontSize=11;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="1510" y="610" width="80" height="70" as="geometry" />
+          <mxGeometry x="1570" y="580" width="80" height="70" as="geometry" />
         </mxCell>
         
         <mxCell id="price-agency" value="AGENCY&#xa;199 EUR/mo&#xa;60 videos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=center;fontSize=11;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="1600" y="610" width="80" height="70" as="geometry" />
+          <mxGeometry x="1660" y="580" width="80" height="70" as="geometry" />
         </mxCell>
         
-        <mxCell id="footer" value="Updated: 2025-12-14 | BRAIN APP MVP | Services Only | Transilvania Business Suite" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="600" y="720" width="500" height="25" as="geometry" />
+        <mxCell id="footer" value="Updated: 2025-12-14 | BRAIN APP MVP | HeyGen + Submagic + n8n + Late API" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="600" y="690" width="500" height="25" as="geometry" />
         </mxCell>
         
       </root>
